@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LSE Exam Papers</title>
+		
+		<!-- CSS LINKS -->
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/style.css">
+		 
+		 <!-- FONTS -->
+		 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,200italic,300,300italic,400,400italic,500,500italic,700,700italic>
+
+		 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700,700italic">
+
+		 <!-- FAVICON - for the crack -->
+		<link rel="shortcut icon" type="image/x-icon" href="https://info.lse.ac.uk/site-elements/img/favicon.png" />
+</head>
+<body>
+	
+	<header> <!-- what? -->
+		<div class="container"></div>
+		<a href="./index.html">
+		<img src="https://6914bdf3367cf0665ef7-9c88bb295bd20c17da407d48346c142f.ssl.cf3.rackcdn.com/lse/live/contrib/LSE%20Library%20Logo%202016_RGB_TxtWht.png" alt="logo">
+		</a><!-- replace with a file in project folder at some point... -->
+		<h1>Exam Papers</h1>
+		<nav>
+			<ul>
+				<li><a href="https://lse.ac.uk/library">Library</a></li>
+				<li><a href="mailto:a.d.jack@lse.ac.uk">Contact</a></li>
+				<li><a href="./about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="banner hero"> <!-- I want to put a banner image in here and was wondering whether to put it in the html or in the css as a background image? I want it to take up the whole banner section...I couldn't work out the best place for it. I guess if I want it as an element that scales in its own right I put it in the HTML? -->
+		<div class="container">
+			<h2>Get ahead on your exams</h2>
+		</div>
+	</section>
+
+	<section class="intro">
+		<div class="container">
+			<p>Search or browse past exam papers for LSE taught courses and access PDF versions to consult during your revision.</p>
+		</div>
+	</section>
+
+	<section class="search-slice">
+		<div class="container">
+			<input class="search-term" type="search" placeholder="Search exam papers">
+			<button class="search-button" type="submit">
+			</button>
+		</div>
+	</section>
+
+	<section class="browse">
+		<div class="container">
+			<h2>Browse papers by degree level</h2>
+		</div>
+		<ul>
+			<div class="container degree-level undergraduate"> 
+				<!-- I wrangled with these for a while! I want a box that is 2/3rd an image at the top with a h3 overlay on the image (with a bit of opacity and border around) and then a coloured block on the bottom 1/3rd with a cta 'button' on that block. I wanted the whole thing clickable -->
+					<a href="./ug-browse.html">
+						<li>
+							<h3 class="background-image-overlay">Undergraduate</h3>
+							<p class="cta">Browse</p>
+						</li> 				
+					</a>
+			</div>
+
+			<div class="container degree-level postgraduate">
+					<a href="./pg-browse.html">
+						<li>
+							<h3 class="background-image-overlay">Postgraduate</h3>
+							<p class="cta">Browse</p>
+						</li>
+					</a>					
+			</div>	
+		</ul>
+	</section>
+
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="#">Legal stuff</a></li>
+				<li><a href="#">Legal stuff</a></li>
+				<li><a href="#">Legal stuff</a></li>
+				<li><a href="#">Legal stuff</a></li>
+			</ul>
+			<p>Copyright <a href="https://github.com/AngusJack">Andy Jack</a> 2018.</p>
+		</div>
+	</footer>	
+	<script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</script>
+</body>
+</html>
