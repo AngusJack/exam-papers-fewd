@@ -19,10 +19,11 @@
 <body>
 	
 	<header>
-		<<div class="container"></div>
+		<div class="container"></div>
 		<a href="./index.html">
 		<img src="https://6914bdf3367cf0665ef7-9c88bb295bd20c17da407d48346c142f.ssl.cf3.rackcdn.com/lse/live/contrib/LSE%20Library%20Logo%202016_RGB_TxtWht.png" alt="logo">
 		</a><!-- replace with a file in project folder at some point... -->
+		<!-- use the logo to get home. maybe consider adding a home option in the nav as well?  -->
 		<h1>Exam Papers</h1>
 		<nav>
 			<ul>
@@ -33,15 +34,53 @@
 		</nav>
 	</header>
 	
-	<!-- ENTER CODE HERE -->
+	<section class="search-slice">
+		<div class="container">
+			<input class="search-term" type="search" placeholder="Search exam papers">
+			<a href="./search-results.html"><button class="search-button" type="submit">
+			</button></a>
+		</div>
+	
+	</section>
+
+	<section class="search-results">
+		<div class="container">
+			<ol>
+				<li class="search-results-boxes">
+					<h4>Accounting and Finance papers 2017</h4>
+					<a href="./department-results.html">View papers</a>
+				</li>
+				<li class="search-results-boxes">
+					<h4>Accounting and Finance papers 2016</h4>
+					<a href="./department-results.html">View papers</a>
+				</li>
+				<li class="search-results-boxes">
+					<h4>Government papers 2013</h4>
+					<a href="./department-results.html">View papers</a>
+				</li>
+				<li class="search-results-boxes">
+					<h4>EH240 World War 2 and Japan paper 2011</h4>
+					<a href="https://drive.google.com/file/d/1b4jXx2uXxsHA_P6JTMuB0Y4rd5F0Sh52/view?usp=sharing">View PDF</a>
+				</li>
+				<li class="search-results-boxes">
+					<h4>Accounting and Finance papers 2016</h4>
+					<a href="https://drive.google.com/file/d/1b4jXx2uXxsHA_P6JTMuB0Y4rd5F0Sh52/view?usp=sharing">View PDF</a>
+				</li>
+			</ol>
+				
+		</div>
+	</section>
+
+	<!-- ENTER CODE HERE --><!-- 
+
+	I need to read more and better understand how to do search. In the meantime I figured I would just create a static page with some possible results on that displayed on submit of the form on index.html. Later on in the course it would be useful to talk a bit more about search please -->
 
 	<footer>
 		<div class="container">
 			<ul>
-				<li><a href="#">Legal stuff</a></li>
-				<li><a href="#">Legal stuff</a></li>
-				<li><a href="#">Legal stuff</a></li>
-				<li><a href="#">Legal stuff</a></li>
+				<li><a href="http://www.lse.ac.uk/lse-information/terms-of-use">Terms of use</a></li>
+				<li><a href="http://www.lse.ac.uk/lse-information/cookies">Cookies</a></li>
+				<li><a href="https://www.lse.ac.uk/lse-information/secure/report-a-page">Report a page</a></li>
 			</ul>
 			<p>Copyright <a href="https://github.com/AngusJack">Andy Jack</a> 2018.</p>
 		</div>
