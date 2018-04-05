@@ -143,13 +143,13 @@ header li {
 /*MAIN*/
 
 h2 {
-	font-size: 1.9rem;
+	font-size: 1.7rem;
 	text-align: center;
 	margin: 0;
 }
 
 p {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	margin: 0;
 	padding: 5px 5px;
 	text-align: center;
@@ -244,7 +244,7 @@ footer a {
 /*MEDIA QUERIES
 */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 800px){
 	
 header nav ul {
 	display: inline;
@@ -258,3 +258,10 @@ nav.fa-bars {
 
 }
 
+Looks fine 400 up to 800 no real changes apart from maybe increasing font size on h2 and p. 
+possibly need to shrink the search box below 400
+above 800 I need to sort the primary nav out so the burger disappears and the nav is inline.
+possibly need to add a link to search? Maybe the two browse options. Drop Library and Contact. 
+Above 800 need to scale up the font sizes, snap the browse boxes next to each other. 
+Find out how to scale up font-size as we go. Can I use a percentage for this? 
+Above 800 I also need to start to constrain the width of the search slice. 
