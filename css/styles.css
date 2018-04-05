@@ -1,10 +1,260 @@
-/*/*/*/*/*/*/*/*/*ideas: fixed header*/
+/******************************************
+/* SETUP
+/*******************************************/
 
-height: vh
-width: vw 
-banner hero
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
 
-percentage for width . 
+/* Clear fix hack */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
 
 
-/**/*/*/*/*/*/*/*/
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+	font-family: roboto;
+}
+body {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #606161;
+  font-weight: 300;
+  background: ghostwhite;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 90%; 
+  margin: 0 auto;
+} 
+
+
+
+.search-slice {
+	background-color: #f0efef;
+	padding: 15px 20px;
+	width: 20;
+	margin: 0, auto
+
+}
+
+form.search {
+	display: flex;
+	align-items: center;
+}
+
+form.search input[type="text"] {
+	flex-grow: 2;
+}
+
+.banner img,
+.ug img,
+.pg img  {
+	width: 100%;
+	height: auto;
+}
+
+/*GENERAL*/
+
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+
+
+/*
+HEADER*/
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f0efef;
+}
+
+header ul {
+	display: block;
+	float: right;
+}
+
+header ul {
+	background-color: ghostwhite;
+	border-radius: 10px;
+	padding: 10px 10px;
+	margin-top: 5px;
+
+}
+
+header ul li a {
+	color:#606161;
+}
+
+.logo {
+	padding: 10px;
+	float: left;
+
+}
+
+h1 {
+	display: inline-block;
+	font-size: 1.5rem;
+	padding-top: 0.3rem;
+
+}
+
+header nav ul {
+	display:none;
+}
+
+header li {
+	/*display: none;*/ /*put back on when set up proper*/
+	/*justify-content: flex-end;*/
+	font-size: 1.5rem;
+}
+
+.fa-bars {
+	padding: 1.5rem;
+	float: right;
+	color: #606161;
+}
+
+.active {
+  display: inline-block;
+}
+
+/*MAIN*/
+
+h2 {
+	font-size: 1.9rem;
+	text-align: center;
+	margin: 0;
+}
+
+p {
+	font-size: 1.3rem;
+	margin: 0;
+	padding: 5px 5px;
+	text-align: center;
+}
+
+section.intro {
+	background-color: ghostwhite;
+}
+
+section.browse {
+	padding-top: 20px;
+}
+
+
+footer {
+	background-color: #f0efef;
+}
+
+/*h3.background-image-overlay {
+	background-image: url("../images/ug_browse.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	/*flex-basis: 50%;*/
+}
+
+/*.degree-level {
+	border: black solid 1px;*/
+	/*max-width: 80%;*/
+	/*display: flex;*/
+	/*justify-content: space-around;
+	flex-direction: row;
+	/*flex-basis: 50%*/
+	/*align-items: center;
+	justify-content: space-between;*/
+
+}
+
+div.pg {} /*for some reason whenever I delete this line i lose my border styling on one of the divs below. arrrgghh*/
+
+div.ug,
+div.pg {
+	margin: 10px auto;
+	background-color: #f0efef;
+	padding: 0 0.8em 0.8em 0.8em;
+	text-align: center;
+	border-radius: 0.5em;
+	/*display: inline-block;*/
+	/*flex-grow: 1;*/
+	/*float: right;*/
+}
+
+/*div.pg {
+	margin: 0 auto;
+	background-color: #f0efef;
+/*	flex-grow: 1;*/
+	/*float: right;*/
+/*}*/
+
+div.ug h3,
+div.pg h3 {
+	font-size: 1.5rem;
+	padding: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 0;
+	color: #606161;
+	
+}
+
+p.cta {
+	color: black;
+	background-color: white;
+	width: 65%;
+	padding: 0.5em;
+	margin: 0.5em auto;
+	border-radius: 0.5em;
+	font-weight: 1.5;
+}
+
+/*FOOTER*/
+footer {
+	padding-top: 0.5em;
+	text-align: center;
+	/*align-items: center;
+	justify-content: space-between;*/
+}
+
+footer a {
+	color: #606161;;
+}
+
+/*MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px){
+	
+header nav ul {
+	display: inline;
+
+}
+
+nav.fa-bars {
+	visibility: hidden;
+}
+
+
+}
+
