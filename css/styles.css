@@ -44,8 +44,6 @@ a {
   margin: 0 auto;
 } 
 
-
-
 .search-slice {
 	background-color: #f0efef;
 	padding: 15px 20px;
@@ -75,7 +73,6 @@ form.search input[type="text"] {
 
 ul {
 	list-style-type: none;
-	padding-left: 0;
 }
 
 
@@ -86,21 +83,12 @@ HEADER*/
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	background-color: #f0efef;
 }
 
-header ul {
-	display: block;
+header nav {
 	float: right;
-}
-
-header ul {
-	background-color: ghostwhite;
-	border-radius: 10px;
-	padding: 10px 10px;
-	margin-top: 5px;
-
+	display:none;
 }
 
 header ul li a {
@@ -110,24 +98,18 @@ header ul li a {
 .logo {
 	padding: 10px;
 	float: left;
-
 }
 
 h1 {
 	display: inline-block;
 	font-size: 1.5rem;
-	padding-top: 0.3rem;
+	padding-top: 0.3em;
 
 }
 
-header nav ul {
-	display:none;
-}
 
 header li {
-	/*display: none;*/ /*put back on when set up proper*/
-	/*justify-content: flex-end;*/
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 .fa-bars {
@@ -168,27 +150,7 @@ footer {
 	background-color: #f0efef;
 }
 
-/*h3.background-image-overlay {
-	background-image: url("../images/ug_browse.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 200px;
-	/*flex-basis: 50%;*/
-}
-
-/*.degree-level {
-	border: black solid 1px;*/
-	/*max-width: 80%;*/
-	/*display: flex;*/
-	/*justify-content: space-around;
-	flex-direction: row;
-	/*flex-basis: 50%*/
-	/*align-items: center;
-	justify-content: space-between;*/
-
-}
-
-div.pg {} /*for some reason whenever I delete this line i lose my border styling on one of the divs below. arrrgghh*/
+div.pg {} /*for some reason whenever I delete this line i lose some styling. arrrgghh*/
 
 div.ug,
 div.pg {
@@ -197,17 +159,7 @@ div.pg {
 	padding: 0 0.8em 0.8em 0.8em;
 	text-align: center;
 	border-radius: 0.5em;
-	/*display: inline-block;*/
-	/*flex-grow: 1;*/
-	/*float: right;*/
 }
-
-/*div.pg {
-	margin: 0 auto;
-	background-color: #f0efef;
-/*	flex-grow: 1;*/
-	/*float: right;*/
-/*}*/
 
 div.ug h3,
 div.pg h3 {
@@ -233,8 +185,6 @@ p.cta {
 footer {
 	padding-top: 0.5em;
 	text-align: center;
-	/*align-items: center;
-	justify-content: space-between;*/
 }
 
 footer a {
@@ -245,14 +195,32 @@ footer a {
 */
 
 @media screen and (min-width: 800px){
-	
-header nav ul {
-	display: inline;
+
+	html {
+		font-size: 1.5rem;
+	}
+
+	h1 {
+	font-size: 1rem;
 
 }
+ header nav {
+ 	display: inline-block;
+ }
 
-nav.fa-bars {
-	visibility: hidden;
+header nav li {
+	font-size: 1rem;
+	display: inline-block;
+	margin: 0 1em;
+}
+
+ul {
+	margin: 0.4em auto;
+}
+
+
+i.fa-bars {
+	display: none;
 }
 
 
