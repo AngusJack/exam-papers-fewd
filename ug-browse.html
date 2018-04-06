@@ -16,33 +16,41 @@
 
 		 <!-- FAVICON - for the crack -->
 		<link rel="shortcut icon" type="image/x-icon" href="https://info.lse.ac.uk/site-elements/img/favicon.png" />
+
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
 	
 	<header>
-		<div class="container"></div>
+		<div class="container">
 		<a href="./index.html">
-		<img src="./images/lse_logo.jpg" alt="logo">
-		</a><!-- replace with a file in project folder at some point... -->
+		<img class="logo" src="./images/lse_logo.jpg" alt="logo">
+		</a>
 		<h1>Exam Papers</h1>
+		<i class="fas fa-bars"></i>
 		<nav>
 			<ul>
-				<li><a href="https://lse.ac.uk/library">Library</a></li>
-				<li><a href="mailto:a.d.jack@lse.ac.uk">Contact</a></li>
+				<li><a href="./search-results.html">Search</a></li>
+				<li><a href="./ug-browse.html">Browse UG</a></li>
+				<li><a href="./pg-browse.html">Browse PG</a></li>
 				<li><a href="./about.html">About</a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
 	
-	<section class="banner">
-		<div class="container">
-			<img src="https://picsum.photos/1400/400" alt="blah">	
-		</div> <!-- trying a image in the html on this page. errr -->
+	<section class="banner hero">
+		<!-- <div class="container"> -->
+			<img src="./images/ug-browse1400x500.jpg" alt="students sitting down looking at a computer together">	
+		<!-- </div> -->
+	</section>
 	
 	<section class="intro">
+		<div class="container">
 		<h2>Browse undergraduate exam papers</h2>
-		<p>Select your department from the list below and choose which year of papers you would like to view. In some instances departments no longer produced papers and they are therefore not available through this site.</p>
-		<p>If you require any assistance or notice errors you should <a href="mailto:iDontCare@bovdMail.com">contact the team</a> who will be happy to help you</p>
+		<p>Select your department from the list below and choose which year of available papers you would like to view.</p>
+		<p>If you require any assistance <a href="mailto:iDontCare@bovdMail.com">contact the team.</a></p>
+	</div>
 	</section>
 
 
@@ -128,7 +136,7 @@
 				<li><a href="http://www.lse.ac.uk/lse-information/cookies">Cookies</a></li>
 				<li><a href="https://www.lse.ac.uk/lse-information/secure/report-a-page">Report a page</a></li>
 			</ul>
-			<p>Copyright <a href="https://github.com/AngusJack">Andy Jack</a> 2018.</p>
+			<p class="copyright">Copyright <a href="https://github.com/AngusJack">Andy Jack</a> 2018.</p>
 		</div>
 	</footer>	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

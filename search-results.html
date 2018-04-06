@@ -16,31 +16,44 @@
 
 		 <!-- FAVICON - for the crack -->
 		<link rel="shortcut icon" type="image/x-icon" href="https://info.lse.ac.uk/site-elements/img/favicon.png" />
+
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
 	
 	<header>
-		<div class="container"></div>
+		<div class="container">
 		<a href="./index.html">
-		<img src="./images/lse_logo.jpg" alt="logo">
-		</a><!-- replace with a file in project folder at some point... -->
-		<!-- use the logo to get home. maybe consider adding a home option in the nav as well?  -->
+		<img class="logo" src="./images/lse_logo.jpg" alt="logo">
+		</a>
 		<h1>Exam Papers</h1>
+		<i class="fas fa-bars"></i>
 		<nav>
 			<ul>
-				<li><a href="https://lse.ac.uk/library">Library</a></li>
-				<li><a href="mailto:a.d.jack@lse.ac.uk">Contact</a></li>
+				<li><a href="./search-results.html">Search</a></li>
+				<li><a href="./ug-browse.html">Browse UG</a></li>
+				<li><a href="./pg-browse.html">Browse PG</a></li>
 				<li><a href="./about.html">About</a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
+	
+	<section class="banner hero">
+		<!-- <div class="container"> -->
+			<!-- <img src="./images/exam_hero.jpg" alt="a student sitting down studying">	 -->
+		<!-- </div> -->
+	</section>
 	
 	<section class="search-slice">
 		<div class="container">
-			<input class="search-term" type="search" placeholder="Search exam papers">
-			<a href="./search-results.html"><button class="search-button" type="submit">
-			</button></a>
+			<form class="search">
+				<!-- <label>Search</label> -->
+				<input type="text" placeholder="Search" />
+				<input type="submit" value="Go" /> <!-- can i get advice on how to make this head to ./search-results.html on click? I guess just going to a static styled page would be OK unless you can think of how better to show this. -->
+			</form>
 		</div>
+	</section>
 	
 	</section>
 
@@ -83,7 +96,7 @@
 				<li><a href="http://www.lse.ac.uk/lse-information/cookies">Cookies</a></li>
 				<li><a href="https://www.lse.ac.uk/lse-information/secure/report-a-page">Report a page</a></li>
 			</ul>
-			<p>Copyright <a href="https://github.com/AngusJack">Andy Jack</a> 2018.</p>
+			<p class="copyright">Copyright <a href="https://github.com/AngusJack">Andy Jack</a> 2018.</p>
 		</div>
 	</footer>	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

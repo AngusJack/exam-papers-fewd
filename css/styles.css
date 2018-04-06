@@ -84,6 +84,7 @@ header {
 	display: flex;
 	align-items: center;
 	background-color: #f0efef;
+	padding: 0.6em 0;
 }
 
 header nav {
@@ -134,8 +135,9 @@ p {
 	font-size: 1.2rem;
 	margin: 0;
 	padding: 5px 5px;
-	text-align: center;
+	text-align: justify;
 }
+
 
 section.intro {
 	background-color: ghostwhite;
@@ -179,6 +181,15 @@ p.cta {
 	margin: 0.5em auto;
 	border-radius: 0.5em;
 	font-weight: 1.5;
+	text-align: center;
+}
+
+.browse-left {
+	padding-left: 0;
+}
+
+ul {
+	padding-left: 0;
 }
 
 /*FOOTER*/
@@ -188,7 +199,60 @@ footer {
 }
 
 footer a {
-	color: #606161;;
+	color: #606161;
+}
+
+.copyright {
+	text-align: center;
+}
+
+
+/*ACCORDION STYLES
+*/
+
+/*how do I get the icons working? I lifted this all from a fewd class coedpen
+*/
+.department {
+  cursor: pointer;
+  position: relative;
+  background-color: #f0efef;
+  padding: 15px 100px 15px 15px; 
+}
+
+.department:before {
+  content: "\f067";
+  /*font-family: "FontAwesome";*/
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.department.is-active:before {
+  content: "\f068";
+}
+
+.paper-year {
+  display: none;
+  padding: 0 15px;
+}
+
+.is-visible {
+  display: block;
+}
+/*
+DEPARTMENT RESULTS PAGE*/
+
+li.pdf a{
+	background-color: #f0efef;
+	padding:  5px;
+	margin: 5px 5px;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+.touch-of-style {
+	list-style-type: circle;
 }
 
 /*MEDIA QUERIES
@@ -211,11 +275,12 @@ footer a {
 header nav li {
 	font-size: 1rem;
 	display: inline-block;
-	margin: 0 1em;
+	margin: 0 0.4em;
 }
 
-ul {
+nav ul {
 	margin: 0.4em auto;
+	/*padding-right: 40px;*/
 }
 
 
@@ -223,7 +288,19 @@ i.fa-bars {
 	display: none;
 }
 
+div.ug,
+div.pg {
+	display:inline-block;
+	width: 45%;
+}
 
+.browse-left {
+	display:flex;
+}
+/*.degree-level ul {
+	margin: 0 auto;
+	padding-right: 0;
+}*/
 }
 
 Looks fine 400 up to 800 no real changes apart from maybe increasing font size on h2 and p. 
@@ -233,3 +310,7 @@ possibly need to add a link to search? Maybe the two browse options. Drop Librar
 Above 800 need to scale up the font sizes, snap the browse boxes next to each other. 
 Find out how to scale up font-size as we go. Can I use a percentage for this? 
 Above 800 I also need to start to constrain the width of the search slice. 
+
+Also get some shadows in there to make the hero look a bit nicer and flow better.
+
+Needs some help sorting out the header
