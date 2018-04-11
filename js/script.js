@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('i').on('click', function() {
-		$('header nav').toggleClass('active'); 
+		$('.burger-hide').toggleClass('active'); 
 console.log ('hi');
 // it works! 
 		}

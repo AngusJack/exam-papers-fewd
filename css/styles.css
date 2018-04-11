@@ -80,48 +80,72 @@ ul {
 /*
 HEADER*/
 
-header {
+.flex-nav  {
 	display: flex;
+/*	flex-wrap: wrap;*/
+	list-style-type: none;
 	align-items: center;
-	background-color: #f0efef;
-	padding: 0.6em 0;
+	margin: 0;
+	padding: 0.3em 0.8em;
+	justify-content: flex-start;
+
 }
 
-header nav {
-	float: right;
-	display:none;
+.fix {
+	max-width: 300px;
+}
+header {
+	background-color: #f0efef;
+	padding: 0;
+	border-bottom: 1px dotted black;
 }
 
 header ul li a {
 	color:#606161;
-}
-
-.logo {
-	padding: 10px;
-	float: left;
+	text-decoration: none;
+	padding-left:5px;
+	padding-right: 5px;
 }
 
 h1 {
-	display: inline-block;
 	font-size: 1.5rem;
-	padding-top: 0.3em;
-
 }
 
-
 header li {
-	font-size: 1.3rem;
+	font-size: 0.9rem;
+	margin-right: 2%;
 }
 
 .fa-bars {
-	padding: 1.5rem;
-	float: right;
+	font-size: 1.5rem;
+	margin: 0 0.8em;
 	color: #606161;
+	
+}
+
+.burger-hide {
+	display: none;
+	border-left: 1px solid lightgrey;
+	margin-right: 0;
+}
+
+.last-nav {
+	border-right: 1px solid lightgrey;
 }
 
 .active {
-  display: inline-block;
+  display: block;
 }
+
+.navi {
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+	border-top: 1px black dotted;
+	padding: 0;
+	margin: 0;
+}
+
 
 /*MAIN*/
 
@@ -251,10 +275,6 @@ li.pdf a{
 	font-size: 1rem;
 }
 
-.touch-of-style {
-	list-style-type: circle;
-}
-
 /*MEDIA QUERIES
 */
 
@@ -273,9 +293,13 @@ li.pdf a{
  }
 
 header nav li {
-	font-size: 1rem;
+	/*font-size: 1rem;*/
 	display: inline-block;
 	margin: 0 0.4em;
+}
+
+.burger-hide {
+	display: block;
 }
 
 nav ul {
@@ -285,6 +309,7 @@ nav ul {
 
 
 i.fa-bars {
+	/*display: none;*/
 	display: none;
 }
 
