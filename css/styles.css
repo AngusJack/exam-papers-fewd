@@ -245,7 +245,7 @@ footer a {
 
 .department:before {
   content: "\f067";
-  /*font-family: "FontAwesome";*/
+  font-family: "FontAwesome";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -274,6 +274,17 @@ li.pdf a{
 	line-height: 1.5;
 	font-size: 1rem;
 }
+
+/*RANDOM BORED PAGE LEARNING TO DO A FLEXBOX GALLERY*/
+
+.gallery {
+	min-height: 100vh;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
 
 /*MEDIA QUERIES
 */
@@ -326,6 +337,12 @@ div.pg {
 	margin: 0 auto;
 	padding-right: 0;
 }*/
+}
+
+/*@media screen and (min-width: 200px) {
+	body {
+	font-size: 1rem;
+	} */
 }
 
 Looks fine 400 up to 800 no real changes apart from maybe increasing font size on h2 and p. 
