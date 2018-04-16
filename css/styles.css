@@ -33,7 +33,6 @@ a {
   text-decoration: none;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -48,7 +47,7 @@ a {
 	background-color: #f0efef;
 	padding: 15px 20px;
 	width: 20;
-	margin: 0, auto
+	margin: 0 auto;
 
 }
 
@@ -82,7 +81,6 @@ HEADER*/
 
 .flex-nav  {
 	display: flex;
-/*	flex-wrap: wrap;*/
 	list-style-type: none;
 	align-items: center;
 	margin: 0;
@@ -245,7 +243,7 @@ footer a {
 
 .department:before {
   content: "\f067";
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -275,16 +273,6 @@ li.pdf a{
 	font-size: 1rem;
 }
 
-/*RANDOM BORED PAGE LEARNING TO DO A FLEXBOX GALLERY*/
-
-.gallery {
-	min-height: 100vh;
-	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-}
-
 
 /*MEDIA QUERIES
 */
@@ -299,12 +287,8 @@ li.pdf a{
 	font-size: 1rem;
 
 }
- header nav {
- 	display: inline-block;
- }
 
 header nav li {
-	/*font-size: 1rem;*/
 	display: inline-block;
 	margin: 0 0.4em;
 }
@@ -315,12 +299,10 @@ header nav li {
 
 nav ul {
 	margin: 0.4em auto;
-	/*padding-right: 40px;*/
 }
 
 
 i.fa-bars {
-	/*display: none;*/
 	display: none;
 }
 
@@ -333,17 +315,32 @@ div.pg {
 .browse-left {
 	display:flex;
 }
-/*.degree-level ul {
-	margin: 0 auto;
-	padding-right: 0;
-}*/
+
 }
 
-/*@media screen and (min-width: 200px) {
-	body {
-	font-size: 1rem;
-	} */
+@media screen and (min-width: 1000px){
+	 .burger-hide {
+		font-size: 1.2rem;
+	 }
+
+	 .search-slice {
+	 	max-width: 1200px;
+	 }
+
+	section.intro p {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
 }
+
+/*@media screen and (max-width: 400px) {
+	.search-slice {
+	 max-width: 100%;
+	}*/
+
+}
+
 
 Looks fine 400 up to 800 no real changes apart from maybe increasing font size on h2 and p. 
 possibly need to shrink the search box below 400
