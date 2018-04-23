@@ -32,6 +32,10 @@ body {
 a {
   text-decoration: none;
 }
+ 
+ li.pdf a {
+ 	font-size: 200rem;
+ }
 
 /******************************************
 /* LAYOUT
@@ -60,6 +64,7 @@ form.search input[type="text"] {
 	flex-grow: 2;
 }
 
+
 .banner img,
 .ug img,
 .pg img  {
@@ -69,12 +74,9 @@ form.search input[type="text"] {
 
 /*GENERAL*/
 
-
 ul {
 	list-style-type: none;
 }
-
-
 
 /*
 HEADER*/
@@ -118,7 +120,6 @@ header li {
 	font-size: 1.5rem;
 	margin: 0 0.8em;
 	color: #606161;
-	
 }
 
 .burger-hide {
@@ -143,7 +144,6 @@ header li {
 	padding: 0;
 	margin: 0;
 }
-
 
 /*MAIN*/
 
@@ -192,7 +192,6 @@ div.pg h3 {
 	margin-top: 1em;
 	margin-bottom: 0;
 	color: #606161;
-	
 }
 
 p.cta {
@@ -232,8 +231,6 @@ footer a {
 /*ACCORDION STYLES
 */
 
-/*how do I get the icons working? I lifted this all from a fewd class coedpen
-*/
 .department {
   cursor: pointer;
   position: relative;
@@ -267,15 +264,15 @@ DEPARTMENT RESULTS PAGE*/
 
 li.pdf a{
 	background-color: #f0efef;
-	padding:  5px;
-	margin: 5px 5px;
 	line-height: 1.5;
 	font-size: 1rem;
 }
 
+li.pdf a:hover {
+	background-color: gainsboro;
+}
 
-/*MEDIA QUERIES
-*/
+/*MEDIA QUERIES*/
 
 @media screen and (min-width: 800px){
 
@@ -285,7 +282,6 @@ li.pdf a{
 
 	h1 {
 	font-size: 1rem;
-
 }
 
 header nav li {
@@ -300,7 +296,6 @@ header nav li {
 nav ul {
 	margin: 0.4em auto;
 }
-
 
 i.fa-bars {
 	display: none;
@@ -333,23 +328,3 @@ div.pg {
 	}
 
 }
-
-/*@media screen and (max-width: 400px) {
-	.search-slice {
-	 max-width: 100%;
-	}*/
-
-}
-
-
-Looks fine 400 up to 800 no real changes apart from maybe increasing font size on h2 and p. 
-possibly need to shrink the search box below 400
-above 800 I need to sort the primary nav out so the burger disappears and the nav is inline.
-possibly need to add a link to search? Maybe the two browse options. Drop Library and Contact. 
-Above 800 need to scale up the font sizes, snap the browse boxes next to each other. 
-Find out how to scale up font-size as we go. Can I use a percentage for this? 
-Above 800 I also need to start to constrain the width of the search slice. 
-
-Also get some shadows in there to make the hero look a bit nicer and flow better.
-
-Needs some help sorting out the header
