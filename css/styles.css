@@ -14,7 +14,6 @@
     display: table;
 }
 
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -52,7 +51,6 @@ a {
 	padding: 15px 20px;
 	width: 20;
 	margin: 0 auto;
-
 }
 
 form.search {
@@ -63,7 +61,6 @@ form.search {
 form.search input[type="text"] {
 	flex-grow: 2;
 }
-
 
 .banner img,
 .ug img,
@@ -78,8 +75,7 @@ ul {
 	list-style-type: none;
 }
 
-/*
-HEADER*/
+/*HEADER*/
 
 .flex-nav  {
 	display: flex;
@@ -160,7 +156,6 @@ p {
 	text-align: justify;
 }
 
-
 section.intro {
 	background-color: ghostwhite;
 }
@@ -168,7 +163,6 @@ section.intro {
 section.browse {
 	padding-top: 20px;
 }
-
 
 footer {
 	background-color: #f0efef;
@@ -214,6 +208,7 @@ ul {
 }
 
 /*FOOTER*/
+
 footer {
 	padding-top: 0.5em;
 	text-align: center;
@@ -227,9 +222,7 @@ footer a {
 	text-align: center;
 }
 
-
-/*ACCORDION STYLES
-*/
+/*ACCORDION STYLES*/
 
 .department {
   cursor: pointer;
@@ -259,8 +252,8 @@ footer a {
 .is-visible {
   display: block;
 }
-/*
-DEPARTMENT RESULTS PAGE*/
+
+/*DEPARTMENT RESULTS PAGE*/
 
 li.pdf a{
 	background-color: #f0efef;
